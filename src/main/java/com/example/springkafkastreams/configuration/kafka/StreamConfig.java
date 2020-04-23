@@ -1,4 +1,4 @@
-package com.example.springkafkastreams.configuration;
+package com.example.springkafkastreams.configuration.kafka;
 
 import com.example.springkafkastreams.exception.handler.KafkaStreamProcessingExceptionHandler;
 import org.apache.kafka.streams.StreamsConfig;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-public class KafkaConfig {
+public class StreamConfig {
 
     @Bean(name = KafkaStreamsDefaultConfiguration.DEFAULT_STREAMS_BUILDER_BEAN_NAME)
     public StreamsBuilderFactoryBean streamsBuilderFactoryBean(KafkaProperties kafkaProperties) {
